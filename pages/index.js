@@ -5,10 +5,11 @@ import Header from "../components/Header";
 import Text from "../components/Text";
 import BtnNotify from "../components/BtnNotify";
 import BtnConfig from "../components/BtnConfig";
+import Profile from "../components/Profile";
 
  const Home = () => (
    <div>
-  <Text text='ok'/>
+     <Profile name='Joao'/>
   <BtnNotify /> <BtnConfig />
     <Header />
   </div>
