@@ -1,18 +1,15 @@
 import Head from "next/head";
 import Image from "next/image";
-import styles from "../styles/Home.module.css";
 import Header from "../components/Header";
 import Text from "../components/Text";
-import BtnNotify from "../components/BtnNotify";
-import BtnConfig from "../components/BtnConfig";
+
 import Profile from "../components/Profile";
+import Portal from "../components/ContainerPortal";
 
- const Home = () => (
-   <div>
-     <Profile name='Joao'/>
-  <BtnNotify /> <BtnConfig />
-    <Header />
-  </div>
-)
+const Home = () => (
+  <>
+    <Portal/>
+  </>
+);
 
-export default Home
+export default Home;
