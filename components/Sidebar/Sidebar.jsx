@@ -10,18 +10,20 @@ import { Newspaper } from "@styled-icons/ionicons-sharp/Newspaper";
 import { Timer } from "@styled-icons/zondicons/Timer";
 import { TrendingUp } from "@styled-icons/evaicons-solid/TrendingUp";
 import { InfoCircle } from "@styled-icons/boxicons-solid/InfoCircle";
-import { Comments } from '@styled-icons/foundation/Comments';
- 
+import { Comments } from "@styled-icons/foundation/Comments";
+
 import Text from "../Text";
 
 const Sidebar = () => (
   <S.ContainerMain>
-    <Image
-      src="/img/logo.png"
-      alt="Logomarca a Planik"
-      width={95}
-      height={18}
-    />
+    <S.ConatainerLogo>
+      <Image
+        src="/img/logo.png"
+        alt="Logomarca a Planik"
+        width={95}
+        height={18}
+      />
+    </S.ConatainerLogo>
 
     <S.ContainerItem>
       <DataPie /> <Text text="Posição Financeira" color="white" />
@@ -56,8 +58,10 @@ const Sidebar = () => (
     </S.ContainerItem>
 
     <S.ContainerItem>
-     <Comments /> <Text text="Comunicados" color="white" />
+      <Comments /> <Text text="Comunicados" color="white" />
     </S.ContainerItem>
+
+    <S.IconMenu />
   </S.ContainerMain>
 );
 

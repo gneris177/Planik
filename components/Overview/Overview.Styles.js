@@ -1,11 +1,15 @@
 import styled from "styled-components";
 
 export const ContainerMain = styled.div`
-  padding: 1%;
+  padding: 2%;
   width: 90%;
-  height: ${(props) => (props.defaultSize ? "300px" : "500px")};
   background: #fff;
+  @media (max-width: 900px) {
+    margin: 2em;
+    text-align: center;
+  }
 `;
+
 export const Header = styled.header`
   padding: 0 1em;
 `;

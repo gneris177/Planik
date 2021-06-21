@@ -7,8 +7,11 @@ export const Container = styled.div`
   padding: 0.4rem;
 `;
 
+export const Text = styled.p`
+  margin-right: 20px;
+`;
+
 export const Icon = styled(ArrowIosForwardOutline)`
   width: 18px;
-  margin-left: 1rem;
   color: #d251a2;
 `;

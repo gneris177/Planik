@@ -22,10 +22,10 @@ const Overview = ({
 
     {graphic && (
       <Image
-        src="/img/graphic.png"
+        src="/img/54601b4a-aa72-4bc7-916a-8d1e018191a6.jpeg"
         alt="Foto de perfil do usuário"
-        width={100}
-        height={100}
+        width={305}
+        height={237}
       />
     )}
     {arrowText && arrowText.map((item, i) => <ArrowText text={item} />)}
