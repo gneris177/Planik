@@ -1,16 +1,18 @@
 import * as S from "./Profile.Styles";
+import Image from 'next/image'
+
 import NamePerfil from "../Text";
 
 const Perfil = ({ name }) => (
   <S.ContainerMain>
     <NamePerfil text={name} />
-    <S.PhotoPerfil
-      src="/img/profile.jpg"
-      alt="Picture of the author"
-      width={30}
-      height={10}
-    />
     <S.Icon />
+    <Image
+      src="/img/profile.png"
+      alt="Foto de perfil do usuário"
+      width={35}
+      height={0}
+    />
   </S.ContainerMain>
 );
 

@@ -17,7 +17,13 @@ const color = (prop) => {
 
 export const Text = styled.p`
   font-family: ${fonts.montserrat};
-  font-size: ${(props) => props.subTitle?'0.8em':'0.7em'};
-  font-weight: ${(props) => props.subTitle?'800':'400'};
+  width: 200px;
+  font-size: 0.7em;
+  font-weight: ${(props) => (props.subTitle ? "800" : "400")};
   color: ${(props) => color(props.color)};
+`;
+
+export const Title = styled.h3`
+  font-size: 1.5em;
+  margin: 0;
 `;
