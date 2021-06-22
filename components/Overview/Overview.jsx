@@ -36,12 +36,20 @@ const Overview = ({
       </S.ConatinerImg>
     )}
 
-    {arrowText && arrowText.map((item, i) => <ArrowText text={item} />)}
+    {arrowText &&
+      arrowText.map((item, i) => (
+        <>
+          <ArrowText text={item} />
+        </>
+      ))}
+
     {texts &&
       texts.map((item, i) => (
-        <S.ConatinerText>
-          <Text text={item} />
-        </S.ConatinerText>
+        <>
+          <S.ConatinerText>
+            <Text text={item} />
+          </S.ConatinerText>
+        </>
       ))}
 
     <S.Footer>
