@@ -1,11 +1,11 @@
 import styled from "styled-components";
 
 export const ContainerMain = styled.div`
-  padding: 2%;
+  padding: 2% 5%; 
   width: 90%;
   background: #fff;
-  @media (max-width: 900px) {
-    margin: 2em;
+  @media (max-width: 1200px) {
+    margin: 3% auto;
     text-align: center;
   }
 `;
@@ -19,10 +19,15 @@ export const Line = styled.hr`
 `;
 
 export const ConatinerText = styled.div`
-  padding: 0.3em;
+  padding: 0.2em;
+`;
+
+export const ConatinerImg = styled.div`
+  text-align: center;
 `;
 
 export const Footer = styled.footer`
+  padding: 0 1em;
   text-align: center;
 `;
 

@@ -4,11 +4,14 @@ import Image from "next/image";
 //components
 import ArrowText from "../ArrowText";
 import Text from "../Text";
+import TextCustom from "../TextCustom";
 
 const Overview = ({
   title,
   graphic,
   arrowText,
+  textStrong,
+  textStrongColor,
   texts,
   defaultSize,
   textLink = "ver mais detalhes",
@@ -20,14 +23,19 @@ const Overview = ({
       <S.Line />
     </S.Header>
 
+    <TextCustom text={textStrong} color={textStrongColor} />
+
     {graphic && (
-      <Image
-        src="/img/54601b4a-aa72-4bc7-916a-8d1e018191a6.jpeg"
-        alt="Foto de perfil do usuário"
-        width={305}
-        height={237}
-      />
+      <S.ConatinerImg>
+        <Image
+          src="/img/54601b4a-aa72-4bc7-916a-8d1e018191a6.jpeg"
+          alt="Foto de perfil do usuário"
+          width={239}
+          height={178}
+        />
+      </S.ConatinerImg>
     )}
+
     {arrowText && arrowText.map((item, i) => <ArrowText text={item} />)}
     {texts &&
       texts.map((item, i) => (

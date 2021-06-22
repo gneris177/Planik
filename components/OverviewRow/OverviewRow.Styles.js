@@ -4,6 +4,7 @@ import Image from "next/image";
 export const ContainerMain = styled.div`
   padding: 0.5rem;
   background: #fff;
+  text-align: center;
 `;
 
 export const Header = styled.header`

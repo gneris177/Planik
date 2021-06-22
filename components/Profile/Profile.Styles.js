@@ -3,7 +3,7 @@ import { ArrowIosDownwardOutline } from "@styled-icons/evaicons-outline/ArrowIos
 
 export const ContainerMain = styled.div`
   display: flex;
-  padding-left: 1rem;
+  padding-left: 1.4rem;
 `;
 
 export const Icon = styled(ArrowIosDownwardOutline)`

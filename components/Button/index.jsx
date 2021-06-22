@@ -1,3 +1,3 @@
-import ArrowText from "./ArrowText";
+import ArrowText from "./Button";
 
 export default ArrowText;

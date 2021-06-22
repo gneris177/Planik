@@ -10,8 +10,8 @@ const Perfil = ({ name }) => (
     <Image
       src="/img/profile.png"
       alt="Foto de perfil do usuário"
-      width={30}
-      height={8}
+      width={35}
+      height={0}
     />
   </S.ContainerMain>
 );

@@ -12,10 +12,10 @@ const OverviewRow = ({ title, defaultSize, textLink }) => (
     </S.Header>
     <S.Line />
     <Image
-      src="/img/8b1ac045-4ca9-41aa-aa55-cdc4061827a4.jpeg"
+      src="/img/ilustracao.png"
       alt="Foto de perfil do usuário"
-      width={500}
-      height={80}
+      width={450}
+      height={55}
     />
   </S.ContainerMain>
 );

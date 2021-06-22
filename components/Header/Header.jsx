@@ -1,13 +1,14 @@
 import * as S from "./Header.Styles";
 import Image from "next/image";
 
+//components
 import Text from "../Text";
 import BtnNotifications from "../BtnNotifications";
 import BtnSettings from "../BtnSettings";
 import Profile from "../Profile";
 
 const Header = ({ headerLogin, headerUser, subTitle, name }) => (
-  <S.ContainerMain headerLogin>
+  <S.ContainerMain headerLogin={headerLogin} headerUser={headerUser}>
     {headerUser && (
       <>
         <div>
@@ -16,6 +17,8 @@ const Header = ({ headerLogin, headerUser, subTitle, name }) => (
         <S.ContainerSecundary>
           <S.ContainerBtn>
             <BtnSettings />
+          </S.ContainerBtn>
+          <S.ContainerBtn>
             <BtnNotifications />
           </S.ContainerBtn>
           <Profile name={name} />
@@ -29,7 +32,7 @@ const Header = ({ headerLogin, headerUser, subTitle, name }) => (
           src="/img/logo02.jpg"
           alt="Logomarca da Planik"
           width={120}
-          height={35}
+          height={0}
         />
         <S.ContainerMenu>
           <S.IconMenu />

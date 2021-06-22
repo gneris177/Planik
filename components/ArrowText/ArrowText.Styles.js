@@ -4,11 +4,11 @@ import { ArrowIosForwardOutline } from "@styled-icons/evaicons-outline/ArrowIosF
 
 export const Container = styled.div`
   display: flex;
-  padding: 0.4rem;
+  padding: 0.3rem;
 `;
 
 export const Icon = styled(ArrowIosForwardOutline)`
   width: 18px;
-  margin-left: 1rem;
+  margin-left: 2rem;
   color: #d251a2;
 `;
